@@ -11,11 +11,11 @@ header{position:sticky;top:0;z-index:10;background:rgba(255,253,249,.96);border-
 .nav{max-width:1180px;margin:auto;padding:16px 24px;display:flex;align-items:center;justify-content:space-between;gap:16px}
 .brand{display:flex;align-items:center;gap:11px;color:var(--brown);font-weight:bold;letter-spacing:1px}.mark{width:42px;height:42px;border:1px solid var(--gold);border-radius:50%;display:grid;place-items:center;color:var(--gold);font-size:20px}.brand small{display:block;font:9px Arial;letter-spacing:2px;color:var(--muted);margin-top:4px}
 nav{display:flex;gap:19px;font:12px Arial;color:#5c4b42}nav a:hover{color:var(--gold)}.menu{display:none;background:none;border:1px solid var(--line);border-radius:8px;padding:8px;color:var(--brown)}
-.hero{max-width:1180px;margin:26px auto 0;padding:0 24px}.hero-inner{min-height:430px;border-radius:24px;overflow:hidden;background:linear-gradient(100deg,rgba(43,23,18,.88),rgba(43,23,18,.28)),url('https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&w=1800&q=85') center/cover;display:flex;align-items:center;padding:clamp(28px,7vw,82px);color:white}
+.hero{max-width:1180px;margin:26px auto 0;padding:0 24px}.hero-inner{min-height:430px;border-radius:24px;overflow:hidden;background:linear-gradient(100deg,rgba(43,23,18,.88),rgba(43,23,18,.28)),url('assets/campus-garden.jpg') center/cover;display:flex;align-items:center;padding:clamp(28px,7vw,82px);color:white}
 .eyebrow,.kicker{font:10px Arial;letter-spacing:2.5px;text-transform:uppercase;color:#d9b77f}.hero h1{font-size:clamp(42px,7vw,76px);line-height:.98;margin:18px 0;max-width:700px}.hero p,.sub{font:14px/1.8 Arial;color:#f2e8dc;max-width:580px}.cta{display:inline-block;margin-top:18px;background:var(--gold);color:#241710;padding:14px 22px;border-radius:30px;font:11px Arial;font-weight:bold}
 .wrap{max-width:1180px;margin:auto;padding:0 24px}.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:-32px;position:relative;padding:0 44px}.stat{background:var(--paper);border:1px solid var(--line);box-shadow:var(--shadow);border-radius:16px;padding:22px;text-align:center}.stat strong{display:block;font-size:34px;color:var(--brown)}.stat span{font:10px Arial;letter-spacing:1.3px;text-transform:uppercase;color:var(--muted)}
 section.content{padding:72px 0 5px}.section-head{display:flex;justify-content:space-between;align-items:end;margin-bottom:22px;gap:20px}h2{font-size:clamp(30px,4vw,43px);color:var(--brown);margin:9px 0}.sub{color:var(--muted)}
-.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:34px;align-items:center}.about-photo{min-height:300px;border-radius:20px;background:url('https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=1100&q=85') center/cover;box-shadow:var(--shadow)}
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:34px;align-items:center}.about-photo{min-height:300px;border-radius:20px;background:url('assets/volleyball.jpg') center/cover;box-shadow:var(--shadow)}
 .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:17px}.card{background:var(--paper);border:1px solid var(--line);border-radius:16px;overflow:hidden}.card-img{height:185px;background:#e9dfd2 center/cover}.card-body{padding:19px}.card-date{font:10px Arial;color:var(--gold);letter-spacing:1px}.card h3{font-size:20px;color:var(--brown);margin:9px 0}.card p{font:12px/1.65 Arial;color:var(--muted)}.pill{display:inline-block;background:#f1e7da;padding:7px 10px;border-radius:20px;font:10px Arial;color:var(--brown2)}
 .gallery-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.gallery-item{min-height:185px;border-radius:13px;background:#e4d6c6 center/cover;position:relative;overflow:hidden}.gallery-item span{position:absolute;bottom:0;left:0;right:0;padding:34px 13px 13px;color:white;background:linear-gradient(transparent,rgba(0,0,0,.75));font:12px Arial}
 .sports{background:var(--brown);color:white;border-radius:20px;padding:32px;display:flex;justify-content:space-between;align-items:center;gap:20px}.sports h2{color:white}.sports p{font:13px/1.7 Arial;color:#e5d6c9}
@@ -48,9 +48,15 @@ footer{margin-top:75px;background:#2e1b16;color:#f2e6d9;padding:40px 24px}.foot{
   #aboutText { font-size: 14px; line-height: 1.8; }
 }
 
+
+.brand-logo{width:48px;height:48px;object-fit:contain;border-radius:50%;background:#fff;flex:0 0 auto}
+footer .brand-logo{width:44px;height:44px}
+.hero-inner{background-position:center 48%}
+@media(max-width:540px){.brand-logo{width:42px;height:42px}}
+
 </style></head><body>
 <div class="topline">MUKHAYYAM BANSWARA · LEARNING · GROWTH · ACHIEVEMENT</div>
-<header><div class="nav"><a class="brand" href="#home"><span class="mark">M</span><span>MUKHAYYAM<small>BANSWARA</small></span></a><button class="menu" id="menuBtn">Menu ☰</button>
+<header><div class="nav"><a class="brand" href="#home"><img class="brand-logo" src="assets/mukhayyam-logo.jpg" alt="Mukhayyam Banswara logo"><span>MUKHAYYAM<small>BANSWARA</small></span></a><button class="menu" id="menuBtn">Menu ☰</button>
 <nav id="mainNav"><a href="#about">About Us</a><a href="#activities">Activities</a><a href="#achievements">Achievements</a><a href="#gallery">Gallery</a><a href="#sports">Annual Sports</a><a href="#announcements">Announcements</a></nav></div></header>
 <main id="home"><div class="hero"><div class="hero-inner"><div><div class="eyebrow">A JOURNEY OF LEARNING AND GROWTH</div><h1>Growing Together.<br>Achieving Together.</h1><p>Discover the people, activities, achievements and memorable moments that make Mukhayyam Banswara special.</p><a class="cta" href="#about">EXPLORE MUKHAYYAM →</a></div></div></div>
 <div class="wrap"><div class="stats"><div class="stat"><strong id="studentCount">—</strong><span>Current Students</span></div><div class="stat"><strong id="iktibaratCount">—</strong><span>Iktibarat</span></div><div class="stat"><strong id="achievementCount">—</strong><span>Achievements</span></div></div></div>
@@ -61,7 +67,7 @@ footer{margin-top:75px;background:#2e1b16;color:#f2e6d9;padding:40px 24px}.foot{
 <section class="content" id="gallery"><div class="section-head"><div><div class="kicker">MEMORIES AND MOMENTS</div><h2>Gallery</h2><p class="sub">Photographs and videos from activities, events, trips and special occasions.</p></div></div><div class="gallery-grid" id="galleryList"><p class="loading">Gallery items will appear here.</p></div></section>
 <section class="content" id="sports"><div class="sports"><div><div class="eyebrow">SPORTS · TEAMWORK · EXCELLENCE</div><h2>Annual Sports</h2><p>Explore team standings, student achievements and annual sports memories.</p></div><a class="cta" id="sportsLink" href="https://azizsunel-web.github.io/mukhayyam-sports-scoreboard/" target="_blank" rel="noopener">OPEN SPORTS SCOREBOARD →</a></div><iframe id="sportsFrame" title="Annual Sports Scoreboard" loading="lazy" src="https://azizsunel-web.github.io/mukhayyam-sports-scoreboard/" style="width:100%;height:850px;border:1px solid var(--line);border-radius:15px;margin-top:16px;background:white"></iframe></section>
 <section class="content" id="announcements"><div class="section-head"><div><div class="kicker">LATEST UPDATES</div><h2>Announcements</h2><p class="sub">The latest notices and updates from Mukhayyam Banswara.</p></div></div><div class="notice-list" id="announcementsList"><p class="loading">Loading announcements…</p></div></section></div></main>
-<footer><div class="foot"><div><div class="brand" style="color:#f4e8dc"><span class="mark">M</span><span>MUKHAYYAM<small style="color:#cdbdaf">BANSWARA</small></span></div><p id="contactText">Learning · Growth · Achievement</p></div><p>© <span id="year"></span> Mukhayyam Banswara<br>Official Website</p></div></footer>
+<footer><div class="foot"><div><div class="brand" style="color:#f4e8dc"><img class="brand-logo" src="assets/mukhayyam-logo.jpg" alt="Mukhayyam Banswara logo"><span>MUKHAYYAM<small style="color:#cdbdaf">BANSWARA</small></span></div><p id="contactText">Learning · Growth · Achievement</p></div><p>© <span id="year"></span> Mukhayyam Banswara<br>Official Website</p></div></footer>
 <script>
 const API_URL="https://script.google.com/macros/s/AKfycbw83-Bf2OOlRjcohu0HPnQZRQy6ElZOukUS2OP9q8CThMcnkMiMC85ch5KaUsXaCI7rJQ/exec";
 const SPORTS_URL="https://azizsunel-web.github.io/mukhayyam-sports-scoreboard/";
@@ -74,7 +80,22 @@ function driveImage(url){let id=driveId(url);return id?'https://drive.google.com
 function drivePreview(url){let id=driveId(url);return id?'https://drive.google.com/file/d/'+id+'/preview':String(url||'');}
 function card(x,activity){let img=driveImage(x.IMAGE_DRIVE_URL);return `<article class="card"><div class="card-img" style="${img?'background-image:url('+JSON.stringify(img)+')':''}"></div><div class="card-body"><div class="card-date">${esc(x.DATE||x.START_DATE||'')}</div><h3>${esc(x.TITLE||'')}</h3><p>${esc(x.DESCRIPTION||'')}</p>${activity?'<span class="pill">'+esc(x.STATUS||'ONGOING')+'</span>':''}</div></article>`;}
 function dateParts(v){let d=new Date(v);return isNaN(d)?{day:'—',month:''}:{day:d.getDate(),month:d.toLocaleString('en',{month:'short'}).toUpperCase()};}
-function renderGallery(items){let el=document.getElementById('galleryList');if(!items.length){el.innerHTML='<p class="loading">No gallery items published yet.</p>';return;}el.innerHTML=items.slice(0,16).map(x=>{if(String(x.MEDIA_TYPE).toUpperCase()==='VIDEO')return `<a class="gallery-item" href="${esc(drivePreview(x.DRIVE_URL))}" target="_blank" rel="noopener" style="display:grid;place-items:center;background:var(--brown);color:white"><span style="position:static;background:none">▶ ${esc(x.TITLE||'Watch video')}</span></a>`;let img=driveImage(x.THUMBNAIL_URL||x.DRIVE_URL);return `<a class="gallery-item" href="${esc(x.DRIVE_URL||img)}" target="_blank" rel="noopener" style="background-image:url('${esc(img)}')"><span>${esc(x.TITLE||'Mukhayyam moment')}</span></a>`;}).join('');}
+function renderGallery(items){
+  let el=document.getElementById('galleryList');
+  const realPhotos=[
+    {title:'Campus Gardens',src:'assets/campus-garden.jpg'},
+    {title:'Football Activity',src:'assets/football.jpg'},
+    {title:'Cricket Activity',src:'assets/cricket.jpg'},
+    {title:'Volleyball Activity',src:'assets/volleyball.jpg'}
+  ];
+  const localHtml=realPhotos.map(x=>`<a class="gallery-item" href="${esc(x.src)}" target="_blank" rel="noopener" style="background-image:url('${esc(x.src)}')"><span>${esc(x.title)}</span></a>`).join('');
+  const sheetHtml=(items||[]).slice(0,16).map(x=>{
+    if(String(x.MEDIA_TYPE).toUpperCase()==='VIDEO')return `<a class="gallery-item" href="${esc(drivePreview(x.DRIVE_URL))}" target="_blank" rel="noopener" style="display:grid;place-items:center;background:var(--brown);color:white"><span style="position:static;background:none">▶ ${esc(x.TITLE||'Watch video')}</span></a>`;
+    let img=driveImage(x.THUMBNAIL_URL||x.DRIVE_URL);
+    return `<a class="gallery-item" href="${esc(x.DRIVE_URL||img)}" target="_blank" rel="noopener" style="background-image:url('${esc(img)}')"><span>${esc(x.TITLE||'Mukhayyam moment')}</span></a>`;
+  }).join('');
+  el.innerHTML=localHtml+sheetHtml;
+}
 function renderAnnouncements(items){let el=document.getElementById('announcementsList');if(!items.length){el.innerHTML='<p class="loading">No announcements published yet.</p>';return;}items.sort((a,b)=>(String(b.PIN_TO_TOP).toUpperCase()==='YES')-(String(a.PIN_TO_TOP).toUpperCase()==='YES'));el.innerHTML=items.slice(0,10).map(x=>{let d=dateParts(x.DATE);return `<article class="notice"><div class="notice-date"><strong>${d.day}</strong>${d.month}</div><div><h3 style="margin:0 0 7px;color:var(--brown)">${esc(x.TITLE)}</h3><p style="font:13px/1.6 Arial;color:var(--muted);margin:0">${esc(x.DESCRIPTION)}</p>${x.IMAGE_DRIVE_URL?`<p><a href="${esc(x.IMAGE_DRIVE_URL)}" target="_blank" rel="noopener" style="color:var(--gold);font:12px Arial">View attached image →</a></p>`:''}</div></article>`;}).join('');}
 function setText(id,v){if(v!==undefined&&v!==null&&String(v)!=='')document.getElementById(id).textContent=v;}
 function loadData(){if(API_URL.startsWith('PASTE_'))return;window.mukhayyamDataCallback=function(d){if(!d||!d.ok){console.error('Mukhayyam data API returned an error',d);return;}let s=d.settings||{};setText('studentCount',s.STUDENT_COUNT||'0');setText('iktibaratCount',s.IKTIBARAT_COUNT||'0');setText('achievementCount',s.HIFZ_ACHIEVEMENTS_COUNT||String((d.achievements||[]).length));(function(){
